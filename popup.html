@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Study Timer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      width: 200px;
+      padding: 10px;
+    }
+    .timer {
+      margin-top: 20px;
+    }
+    .button {
+      margin-top: 10px;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    .button:disabled {
+      background-color: #888;
+    }
+  </style>
+</head>
+<body>
+  <h1>Study Timer</h1>
+  <div>
+    <label for="study-time">Study Time (minutes):</label>
+    <input type="number" id="study-time" min="1" value="25">
+  </div>
+  <div>
+    <label for="break-time">Break Time (minutes):</label>
+    <input type="number" id="break-time" min="1" value="5">
+  </div>
+  <button id="start-button" class="button">Start Timer</button>
+  <div id="timer" class="timer"></div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
